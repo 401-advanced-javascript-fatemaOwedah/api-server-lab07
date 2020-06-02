@@ -78,7 +78,7 @@ describe('web server', () => {
       .post('/products')
       .send(record)
       .then(result => {
-        record.id = 2;
+        record.id = 1;
         expect(result.body).toEqual(record);
         expect(result.status).toEqual(200);
       });
