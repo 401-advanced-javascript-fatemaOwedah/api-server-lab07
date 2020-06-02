@@ -15,16 +15,39 @@
 
 ### Setup
 
-#### `json-server`
-
+#### `jest`
+#### `express`
+#### `dotenv`
+#### `supertest`
 
 #### How to initialize/run your application 
- node index.js 
+- node index.js /nodemon
+- after that go to swagger
+http://localhost:4000/categories ===> app.post
+http://localhost:4000/categories ===> app.get
+http://localhost:4000/categories/:id ===> app.get
+http://localhost:4000/categories/:id ===> app.put
+http://localhost:4000/categories/:id ===> app.patch
+http://localhost:4000/categories/:id ===> app.delete
+///////////////////////////////////////////////////
+http://localhost:4000/products ===> app.post
+http://localhost:4000/products ===> app.get
+http://localhost:4000/products/:id ===> app.get
+http://localhost:4000/products/:id ===> app.put
+http://localhost:4000/products/:id ===> app.patch
+http://localhost:4000/products/:id ===> app.delete
+
+to run test ===> npm test / npm run test
+
+
 
 #### How do I install the app or library
+- npm init -y 
+- npm i express jest dotenv supertest
 - npm install -g json-server
 
 #### Tests
-
+npm run test 
 
 #### UML
+![UML](/assets/lab7.jpeg)
