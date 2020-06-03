@@ -1,3 +1,4 @@
+
 'use strict';
 // express
 const mongoose = require('mongoose');
@@ -15,4 +16,4 @@ const mongooseOptions = {
   useFindAndModify: false,
 };
 
-mongoose.connect(MONGODB_URI, mongooseOptions);
+mongoose.connect(MONGODB_URI, mongooseOptions); 

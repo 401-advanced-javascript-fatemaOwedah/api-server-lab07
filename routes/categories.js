@@ -41,4 +41,4 @@ function deleteCategory(req,res,next){
     .then(categoryDelete =>{res.status(200).json(`the category delete successfully`);})
     .catch(next);
 }
-module.exports = router;
+module.exports = router; 

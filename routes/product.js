@@ -1,3 +1,4 @@
+
 'use strict';
 
 const express = require('express');
@@ -42,4 +43,4 @@ function deleteProduct(req,res,next){
     .catch(next);
 }
 
-module.exports = router;
+module.exports = router; 
