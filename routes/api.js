@@ -2,7 +2,7 @@
 
 const express = require('express');
 const route = express.Router();
-const getModel = require('../middleware/parms')
+const getModel = require('../middleware/parms');
 
 route.param('model',getModel);
 route.post('/api/v1/:model',postModel);
