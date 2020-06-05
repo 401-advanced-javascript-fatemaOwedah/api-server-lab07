@@ -2,26 +2,8 @@
 
 const express = require('express');
 const route = express.Router();
+const getModel = require('../middleware/parms')
 
-const categories = require('../models/categories/categories-model');
-const products = require('../models/product/product-model');
-
-function getModel(req, res, next) {
-  let model = req.params.model; 
-  switch(model) {
-  case 'products':
-    req.model = products;
-    next();
-    return;
-  case 'categories':
-    req.model = categories;
-    next();
-    return;
-  default:
-    next('Invalid Model');
-    return;
-  }
-}
 route.param('model',getModel);
 route.post('/api/v1/:model',postModel);
 route.get('/api/v1/:model',getAll);
